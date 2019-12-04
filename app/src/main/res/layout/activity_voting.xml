@@ -28,6 +28,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:choiceMode="singleChoice"
+        android:overScrollMode="never"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/vote_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
