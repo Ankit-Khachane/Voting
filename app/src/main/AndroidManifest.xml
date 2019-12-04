@@ -14,15 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".VotersActivity"></activity>
-        <activity android:name=".AdminActivity" />
-        <activity android:name=".VotedActivity" />
-        <activity android:name=".VotingActivity" />
+        <activity android:name=".activity.admin.VotersActivity"></activity>
+        <activity android:name=".activity.admin.AdminActivity" />
+        <activity android:name=".activity.voter.VotedActivity" />
+        <activity android:name=".activity.voter.VotingActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".activity.RegistrationActivity"
             android:windowSoftInputMode="adjustResize|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

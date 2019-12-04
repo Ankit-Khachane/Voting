@@ -1,4 +1,4 @@
-package com.jforce.voting;
+package com.jforce.voting.activity.admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.DataQueryBuilder;
+import com.jforce.voting.R;
+import com.jforce.voting.adapters.VotersAdapter;
 import com.jforce.voting.api.Keys;
 
 import java.util.ArrayList;
@@ -37,7 +39,7 @@ public class VotersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_voters);
         ButterKnife.bind(this);
         Intent intent = getIntent();
-        objecetId = intent.getStringExtra("candidateId");
+        objecetId = intent.getStringExtra(AdminActivity.SELECTED_cANDIDATE_ID_KEY);
         Log.i(TAG, "onCreate: objectID = " + objecetId);
 
         mVoters = new ArrayList<>();

@@ -1,4 +1,4 @@
-package com.jforce.voting;
+package com.jforce.voting.adapters;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -7,55 +7,55 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.jforce.voting.R;
 import com.jforce.voting.api.Candidates;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CandidateAdapter extends BaseAdapter {
-
+public class AdminAdapter extends BaseAdapter {
+    private final Drawable avatar;
     private Context mContext;
-    private Drawable avatar;
-    private List<Candidates> candidatesList;
+    private List<Candidates> mCandidates = new ArrayList<>();
 
-    CandidateAdapter(Context mContext, List<Candidates> candidatesList) {
+    public AdminAdapter(Context mContext, List<Candidates> mCandidates) {
         this.mContext = mContext;
-        this.candidatesList = candidatesList;
+        this.mCandidates = mCandidates;
         avatar = mContext.getDrawable(R.drawable.ic_avatar);
+
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder mHolder;
+        ViewHolder holder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.candiate_row_item, parent, false);
-            mHolder = new ViewHolder(convertView);
-            convertView.setTag(mHolder);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.admin_row_item, parent, false);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
         } else {
-            mHolder = (ViewHolder) convertView.getTag();
+            holder = (ViewHolder) convertView.getTag();
         }
-
-        Candidates candidates = candidatesList.get(position);
-        mHolder.candidatenameTv.setText(candidates.getCandidateName());
-        mHolder.radioBtn.setChecked(false);
-        mHolder.imageView.setImageDrawable(avatar);
+        Candidates candidate = mCandidates.get(position);
+        holder.imageView.setImageDrawable(avatar);
+        holder.candidatenameTv.setText(candidate.getCandidateName());
+        holder.votecountTv.setText(String.valueOf(candidate.getVoteCount()));
 
         return convertView;
     }
 
     @Override
     public int getCount() {
-        return candidatesList.size();
+        return mCandidates.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return candidatesList.get(position);
+        return mCandidates.get(position);
     }
 
     @Override
@@ -63,14 +63,15 @@ public class CandidateAdapter extends BaseAdapter {
         return position;
     }
 
+
     static
     class ViewHolder {
-        @BindView(R.id.radio_btn)
-        RadioButton radioBtn;
         @BindView(R.id.imageView)
         ImageView imageView;
         @BindView(R.id.candidatename_tv)
         TextView candidatenameTv;
+        @BindView(R.id.votecount_tv)
+        TextView votecountTv;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);

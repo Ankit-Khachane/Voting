@@ -1,4 +1,4 @@
-package com.jforce.voting;
+package com.jforce.voting.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.jforce.voting.R;
 
 import java.util.List;
 

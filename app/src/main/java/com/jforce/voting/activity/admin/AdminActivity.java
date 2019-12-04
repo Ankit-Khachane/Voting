@@ -1,4 +1,4 @@
-package com.jforce.voting;
+package com.jforce.voting.activity.admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.jforce.voting.R;
+import com.jforce.voting.adapters.AdminAdapter;
 import com.jforce.voting.api.Candidates;
 
 import java.util.ArrayList;
@@ -22,6 +24,7 @@ import butterknife.OnItemClick;
 
 public class AdminActivity extends AppCompatActivity {
     private static final String TAG = "AdminActivity";
+    public static final String SELECTED_cANDIDATE_ID_KEY = "candidateId_key";
 
     @BindView(R.id.candiate_lst)
     ListView mCandidatesView;
@@ -76,8 +79,7 @@ public class AdminActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), VotersActivity.class);
         Candidates mSelectedCandidate = mCandidates.get(position);
         Toast.makeText(this, "Selected " + mSelectedCandidate.getCandidateName(), Toast.LENGTH_SHORT).show();
-        intent.putExtra("candidateId", mSelectedCandidate.getObjectId());
+        intent.putExtra(SELECTED_cANDIDATE_ID_KEY, mSelectedCandidate.getObjectId());
         startActivity(intent);
-        this.finish();
     }
 }

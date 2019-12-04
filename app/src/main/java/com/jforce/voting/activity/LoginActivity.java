@@ -1,4 +1,4 @@
-package com.jforce.voting;
+package com.jforce.voting.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,9 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.jforce.voting.R;
+import com.jforce.voting.activity.admin.AdminActivity;
+import com.jforce.voting.activity.voter.VotingActivity;
 import com.jforce.voting.api.Keys;
 import com.jforce.voting.utils.Utils;
 
