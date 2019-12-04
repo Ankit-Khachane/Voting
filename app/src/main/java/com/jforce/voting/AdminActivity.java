@@ -18,7 +18,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnItemSelected;
+import butterknife.OnItemClick;
 
 public class AdminActivity extends AppCompatActivity {
     private static final String TAG = "AdminActivity";
@@ -70,11 +70,14 @@ public class AdminActivity extends AppCompatActivity {
 
     }
 
-    @OnItemSelected(value = R.id.candiate_lst, callback = OnItemSelected.Callback.ITEM_SELECTED)
-    public void OnCandidateSelected(int position) {
+    @OnItemClick(R.id.candiate_lst)
+    void OnCandidateClicked(int position) {
+        Log.i(TAG, "OnCandidateClicked: clicked !");
         Intent intent = new Intent(getApplicationContext(), VotersActivity.class);
         Candidates mSelectedCandidate = mCandidates.get(position);
         Toast.makeText(this, "Selected " + mSelectedCandidate.getCandidateName(), Toast.LENGTH_SHORT).show();
         intent.putExtra("candidateId", mSelectedCandidate.getObjectId());
+        startActivity(intent);
+        this.finish();
     }
 }
