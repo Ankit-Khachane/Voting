@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +24,7 @@ public class AdminActivity extends AppCompatActivity {
     private static final String TAG = "AdminActivity";
 
     @BindView(R.id.candiate_lst)
-    private ListView mCandidatesView;
+    ListView mCandidatesView;
     private AdminAdapter mAdapter;
     private List<Candidates> mCandidates;
 
@@ -73,6 +74,7 @@ public class AdminActivity extends AppCompatActivity {
     public void OnCandidateSelected(int position) {
         Intent intent = new Intent(getApplicationContext(), VotersActivity.class);
         Candidates mSelectedCandidate = mCandidates.get(position);
+        Toast.makeText(this, "Selected " + mSelectedCandidate.getCandidateName(), Toast.LENGTH_SHORT).show();
         intent.putExtra("candidateId", mSelectedCandidate.getObjectId());
     }
 }

@@ -42,7 +42,7 @@ public class AdminAdapter extends BaseAdapter {
         Candidates candidate = mCandidates.get(position);
         holder.imageView.setImageDrawable(avatar);
         holder.candidatenameTv.setText(candidate.getCandidateName());
-        holder.votecountTv.setText(candidate.getVoteCount());
+        holder.votecountTv.setText(String.valueOf(candidate.getVoteCount()));
 
         return convertView;
     }

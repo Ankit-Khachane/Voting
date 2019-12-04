@@ -13,6 +13,7 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.jforce.voting.api.Keys;
 import com.jforce.voting.utils.Utils;
 
 import butterknife.BindView;
@@ -74,8 +75,13 @@ public class LoginActivity extends AppCompatActivity {
                         // user has been logged in
                         if (user != null) {
                             Toast.makeText(LoginActivity.this, "User Authorized", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), VotingActivity.class));
-                            LoginActivity.this.finish();
+                            if ((boolean) user.getProperty(Keys.User.IS_ADMIN)) {
+                                startActivity(new Intent(getApplicationContext(), AdminActivity.class));
+                                LoginActivity.this.finish();
+                            } else {
+                                startActivity(new Intent(getApplicationContext(), VotingActivity.class));
+                                LoginActivity.this.finish();
+                            }
                         } else {
                             Log.i(TAG, "User: User is not fetched");
                         }
