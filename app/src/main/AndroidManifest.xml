@@ -14,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.admin.VotersActivity" />
         <activity android:name=".activity.admin.AdminActivity" />
         <activity android:name=".activity.voter.VotedActivity" />
@@ -23,13 +30,7 @@
             android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
             android:name=".activity.RegistrationActivity"
-            android:windowSoftInputMode="adjustResize|adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:windowSoftInputMode="adjustResize|adjustPan" />
     </application>
 
 </manifest>
