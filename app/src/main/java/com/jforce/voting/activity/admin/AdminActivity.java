@@ -23,9 +23,8 @@ import butterknife.ButterKnife;
 import butterknife.OnItemClick;
 
 public class AdminActivity extends AppCompatActivity {
-    private static final String TAG = "AdminActivity";
     public static final String SELECTED_cANDIDATE_ID_KEY = "candidateId_key";
-
+    private static final String TAG = "AdminActivity";
     @BindView(R.id.candiate_lst)
     ListView mCandidatesView;
     private AdminAdapter mAdapter;
