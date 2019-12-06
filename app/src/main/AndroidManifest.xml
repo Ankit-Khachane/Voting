@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".activity.admin.VotersActivity"></activity>
+        <activity android:name=".activity.admin.VotersActivity" />
         <activity android:name=".activity.admin.AdminActivity" />
         <activity android:name=".activity.voter.VotedActivity" />
         <activity android:name=".activity.voter.VotingActivity" />
