@@ -27,7 +27,7 @@ public class VotersAdapter extends RecyclerView.Adapter<VotersAdapter.Holder> {
     public Holder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         Holder mHolder;
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        View row = inflater.inflate(R.layout.voterlist_row_item, viewGroup, false);
+        View row = inflater.inflate(R.layout.item_voterlist_row, viewGroup, false);
         mHolder = new Holder(row);
         return mHolder;
     }

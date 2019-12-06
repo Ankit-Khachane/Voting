@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heading_lbl"
-        tools:listitem="@layout/candiate_row_item" />
+        tools:listitem="@layout/item_candiate_row" />
 
     <Button
         android:id="@+id/vote_btn"

@@ -34,7 +34,7 @@ public class CandidateAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder mHolder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.candiate_row_item, parent, false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_candiate_row, parent, false);
             mHolder = new ViewHolder(convertView);
             convertView.setTag(mHolder);
         } else {

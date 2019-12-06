@@ -21,6 +21,6 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/admin_row_item" />
+        tools:listitem="@layout/item_admin_row" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

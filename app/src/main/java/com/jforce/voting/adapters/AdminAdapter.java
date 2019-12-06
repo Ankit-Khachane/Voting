@@ -34,7 +34,7 @@ public class AdminAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.admin_row_item, parent, false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_admin_row, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {
