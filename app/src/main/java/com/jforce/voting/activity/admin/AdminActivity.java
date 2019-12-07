@@ -25,7 +25,7 @@ import butterknife.OnItemClick;
 public class AdminActivity extends AppCompatActivity {
     public static final String SELECTED_cANDIDATE_ID_KEY = "candidateId_key";
     private static final String TAG = "AdminActivity";
-    @BindView(R.id.candiate_lst)
+    @BindView(R.id.candidate_lst)
     ListView mCandidatesView;
     private AdminAdapter mAdapter;
     private List<Candidates> mCandidates;
@@ -72,7 +72,7 @@ public class AdminActivity extends AppCompatActivity {
 
     }
 
-    @OnItemClick(R.id.candiate_lst)
+    @OnItemClick(R.id.candidate_lst)
     void OnCandidateClicked(int position) {
         Log.i(TAG, "OnCandidateClicked: clicked !");
         Intent intent = new Intent(getApplicationContext(), VotersActivity.class);

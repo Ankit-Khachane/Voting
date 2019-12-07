@@ -8,11 +8,11 @@
     tools:context=".activity.SplashActivity">
 
     <ImageView
-        android:id="@+id/splashlogo"
+        android:id="@+id/vote_imv"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:contentDescription="splash screen logo"
-        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/splash_screen_logo"
+        android:src="@drawable/ic_vote"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

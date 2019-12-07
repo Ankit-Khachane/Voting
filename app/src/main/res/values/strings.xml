@@ -12,5 +12,7 @@
     <string name="candidate_avatar_description">Candidate Avatar</string>
     <string name="vote_count_hint_txt">22</string>
     <string name="voter_name_txt">Voter Name</string>
+    <string name="splash_screen_logo">splash screen logo</string>
+    <string name="thanks_txt">Thank You For Voting</string>
 
 </resources>

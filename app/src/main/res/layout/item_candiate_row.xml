@@ -41,7 +41,7 @@
         android:layout_marginEnd="8dp"
         android:text="@string/name_hint_txt"
         android:textAlignment="textStart"
-        android:textColor="#CFD8DC"
+        android:textColor="@color/font_color_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

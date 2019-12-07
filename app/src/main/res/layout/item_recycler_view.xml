@@ -10,5 +10,9 @@
         android:id="@+id/voter_name_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/font_color_light"
+        android:textSize="18sp"
         tools:text="@tools:sample/full_names" />
 </LinearLayout>

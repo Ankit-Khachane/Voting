@@ -32,7 +32,7 @@ import butterknife.OnClick;
 public class VotingActivity extends AppCompatActivity {
     private static final String TAG = "VotingActivity";
 
-    @BindView(R.id.candiate_lst)
+    @BindView(R.id.candidate_lst)
     ListView candidateLast;
     @BindView(R.id.vote_btn)
     Button voteBtn;
