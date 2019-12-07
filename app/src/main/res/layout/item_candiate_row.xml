@@ -16,20 +16,22 @@
         android:checked="false"
         android:clickable="false"
         android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="17dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:contentDescription="Candidate Avatar"
+        android:contentDescription="@string/candidate_avatar_description"
         android:src="@drawable/ic_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radio_btn"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/candidatename_tv"
@@ -37,13 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Don Joe"
+        android:text="@string/name_hint_txt"
         android:textAlignment="textStart"
         android:textColor="#CFD8DC"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="20dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

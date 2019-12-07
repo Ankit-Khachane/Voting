@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
     tools:context=".activity.voter.VotingActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Please Select Any One Candidate"
+        android:text="@string/title_voting"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -38,9 +39,14 @@
 
     <Button
         android:id="@+id/vote_btn"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vote"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_background"
+        android:text="@string/vote_btn_txt"
+        android:textColor="@color/font_color_dark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -7,8 +7,8 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/voter_name_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@tools:sample/lorem" />
+        tools:text="@tools:sample/full_names" />
 </LinearLayout>
