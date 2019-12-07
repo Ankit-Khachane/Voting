@@ -7,7 +7,7 @@
     <string name="name_hint_txt">Jon doe</string>
     <string name="login_btn_txt">Login</string>
     <string name="registration_btn_txt">Register</string>
-    <string name="title_voting">Please Select Any One Candidate</string>
+    <string name="title_voting">Campus Candidates</string>
     <string name="vote_btn_txt">Vote</string>
     <string name="candidate_avatar_description">Candidate Avatar</string>
     <string name="vote_count_hint_txt">22</string>

@@ -23,7 +23,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/candidatename_tv"
+        android:id="@+id/candidate_name_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -31,16 +31,16 @@
         android:paddingEnd="10dp"
         android:text="@string/name_hint_txt"
         android:textAlignment="textStart"
-        android:textColor="#CFD8DC"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="@color/font_color_light"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/votecount_tv"
+        android:id="@+id/vote_count_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -49,12 +49,12 @@
         android:paddingEnd="10dp"
         android:text="@string/vote_count_hint_txt"
         android:textAlignment="textEnd"
-        android:textColor="#CFD8DC"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="@color/font_color_light"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/candidatename_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/candidate_name_tv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/candidatename_tv"
-        app:layout_constraintTop_toTopOf="@+id/candidatename_tv" />
+        app:layout_constraintStart_toEndOf="@+id/candidate_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/candidate_name_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

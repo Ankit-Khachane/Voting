@@ -68,9 +68,9 @@ public class AdminAdapter extends BaseAdapter {
     class ViewHolder {
         @BindView(R.id.imageView)
         ImageView imageView;
-        @BindView(R.id.candidatename_tv)
+        @BindView(R.id.candidate_name_tv)
         TextView candidatenameTv;
-        @BindView(R.id.votecount_tv)
+        @BindView(R.id.vote_count_tv)
         TextView votecountTv;
 
         ViewHolder(View view) {

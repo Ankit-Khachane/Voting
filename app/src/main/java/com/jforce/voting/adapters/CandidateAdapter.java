@@ -70,7 +70,7 @@ public class CandidateAdapter extends BaseAdapter {
         RadioButton radioBtn;
         @BindView(R.id.imageView)
         ImageView imageView;
-        @BindView(R.id.candidatename_tv)
+        @BindView(R.id.candidate_name_tv)
         TextView candidatenameTv;
 
         ViewHolder(View view) {

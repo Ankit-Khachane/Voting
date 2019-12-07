@@ -4,7 +4,9 @@
     <dimen name="margin_end">10dp</dimen>
     <dimen name="margin_top_100">100dp</dimen>
     <dimen name="margin_top_15">15dp</dimen>
+    <dimen name="margin_top_10">10dp</dimen>
 
     <dimen name="padding_start">5dp</dimen>
     <dimen name="padding_end">5dp</dimen>
+    <dimen name="margin_bottom_10">10dp</dimen>
 </resources>
