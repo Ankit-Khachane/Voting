@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Voting</string>
     <string name="registration_txt">REGISTRATION</string>
-    <string name="email_hint_txt">donjoe@mail.com</string>
+    <string name="email_hint_txt">Donjoe@mail.com</string>
     <string name="password_hint_txt">Password</string>
     <string name="phone_hint_txt">8596859685</string>
     <string name="name_hint_txt">Jon doe</string>

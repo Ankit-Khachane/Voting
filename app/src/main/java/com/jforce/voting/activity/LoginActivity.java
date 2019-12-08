@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     Button loginBtn;
 
     private String email, password;
-    private boolean isEmailValid, isPasswordValid, isUserAuthorized;
+    private boolean isEmailValid, isPasswordValid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,6 @@ public class LoginActivity extends AppCompatActivity {
 
         isEmailValid = false;
         isPasswordValid = false;
-        isUserAuthorized = false;
     }
 
     @OnClick(R.id.login_btn)
